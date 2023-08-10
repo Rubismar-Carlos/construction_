@@ -8,25 +8,41 @@ import styles from '../../styles/Navbar.module.css'
 
 // ICONS
 import { FiMenu } from 'react-icons/fi'
+import { AiOutlineClose } from 'react-icons/ai'
 
 export default function Navbar() {
 
     //  STATES MENU MOBILE
-    const [openMobile, setOpenMobile] = useState(true)
-    const [closeMobile, setCloseMobile] = useState(true)
+    const [openMobile, setOpenMobile] = useState(false)
 
-    // FUNCAO ABRIR E FECHAR MENU MOBILE
-    const handleOpenMenu = () => setOpenMobile(!openMobile)
-    const handleCloseMenu = () => setCloseMobile(!closeMobile)
+    // VISUALIZAR O BOTÃO DO MENU MOBILE
+    const [visible, setVisivle] = useState(true)
+
+    // FUNCAO ABRIR MENU MOBILE
+    const handleOpenMenu = () => {
+
+        setVisivle(false)
+        setOpenMobile(!openMobile)
+
+    }
+
+    // FUNCAO ABRIR MENU MOBILE
+    const handleCloseMenu = () => {
+
+        setVisivle(true)
+        setOpenMobile(false)
+
+    }
 
 
     return (
         <div>
-            <div className={styles.menu_desktop}>
+            <div className={styles.menu}>
                 <div className={styles.logo}>
                     <h2>LOGO</h2>
                 </div>
                 <nav>
+                    {/* MENU DESKTOP */}
                     <div className={styles.navbar_desktop}>
                         <ul className={styles.ul_desktop}>
                             <li>
@@ -58,11 +74,13 @@ export default function Navbar() {
                     </div>
                 </nav>
                 <div className={styles.btn_mobile}>
-                    < FiMenu onClick={handleOpenMenu}/>
+                    {visible && < FiMenu onClick={handleOpenMenu}/>}
+                    {!visible && < AiOutlineClose  onClick={handleCloseMenu}/>}
                 </div>
             </div>
 
-            <div className={` ${styles.menu_mobile} ${styles.open_menu ? `${styles.menu_open}` : `${styles.menu_close}`}`}>
+            {/* MENU MOBILE */}
+            <div className={` ${styles.menu_mobile} ${openMobile ? `${styles.menu_open}` : `${styles.menu_close}`}`}>
                 <ul>
                     <li>
                         <Link href={'/about'} target={'_self'}>
