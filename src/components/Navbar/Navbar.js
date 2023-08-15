@@ -74,14 +74,16 @@ export default function Navbar() {
                     </div>
                 </nav>
                 <div className={styles.btn_mobile}>
+                    {/* BOTAO MENU MOBILE PARA ABRIR */}
                     {visible && < FiMenu onClick={handleOpenMenu}/>}
+                    {/* BOTAO MENU MOBILE PARA FECHAR */}
                     {!visible && < AiOutlineClose  onClick={handleCloseMenu}/>}
                 </div>
             </div>
 
             {/* MENU MOBILE */}
             <div className={` ${styles.menu_mobile} ${openMobile ? `${styles.menu_open}` : `${styles.menu_close}`}`}>
-                <ul>
+                <ul className={styles.ul_mobile}>
                     <li>
                         <Link href={'/about'} target={'_self'}>
                             Inicio
