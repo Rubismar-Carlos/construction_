@@ -1,4 +1,94 @@
+/* LAYOUT DO COMPONENTE INICIO */
 .inicio_container {
-    height: 50vh;
     background-color: aqua;
+    padding-top: 80px;
+    padding-bottom: 60px;
+}
+
+/* PARTE DA APRESENTACAO */
+.inicio_box {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px ;
+}
+
+
+/* BTNS */
+.box_btns {
+    display: flex;
+    gap: 30px;
+    margin: 30px auto;
+}
+
+.box_btns button{
+    padding: 10px;
+    font-size: 1em;
+    font-weight: 300;
+    border-radius: 20px;
+    border: none;
+    background-color: greenyellow;
+    cursor: pointer;
+
+}
+
+.box_btns button:hover {
+    border: 1px solid black;
+}
+
+/* ABOUT */
+.inicio_about {
+   text-align: center;
+   margin: 30px auto;
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
+
+/* MODO DE LAYOUT DESKTOP */
+@media (min-width: 1000px) {
+    
+    /* BOX IMAGEM */
+    .box_img {
+        width: 350px;
+        height: 350px;
+        border: 1px solid yellow;
+    }
+
+    /* BOX NOME/PROFISSAO */
+    .box_text {
+        margin: 100px;
+    }
+
+    /* ABOUT TEXT */
+    .about_text {
+        width: 800px;
+        margin: 0 auto;
+    }
+    
+}
+
+/* MODO DE LAYOUT MOBILE */
+@media (max-width: 799px) {
+    
+    /* BOX IMAGEM */
+    .box_img {
+        width: 250px;
+        height: 250px;
+        border: 1px solid yellow;
+    }
+
+    /* BOX NOME/PROFISSAO */
+    .box_text {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+
+    /* ABOUT TEXT */
+    .about_text {
+        margin: 0 20px;
+        text-align: center;
+    }
+
 }
