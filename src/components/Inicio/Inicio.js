@@ -8,7 +8,7 @@ export default function Inicio() {
         <div className={styles.inicio_container}>
             <div className={styles.inicio_box}>
                 <div className={styles.box_img}>
-                    <img src="" alt="Imagem pessoal" />
+                    <img src="/imagem/portfolio.png" alt="Imagem pessoal" />
                 </div>
                 <div className={styles.box_text}>
                     <h1>Olá, eu sou o <br /> Rubismar Carlos</h1>
