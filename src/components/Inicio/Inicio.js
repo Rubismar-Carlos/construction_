@@ -11,11 +11,11 @@ export default function Inicio() {
                     <img src="" alt="Imagem pessoal" />
                 </div>
                 <div className={styles.box_text}>
-                    <h1>Olá, eu sou o Rubismar Carlos</h1>
+                    <h1>Olá, eu sou o <br /> Rubismar Carlos</h1>
                     <h2>Desenvolvedor Front-End</h2>
                     <div className={styles.box_btns}>
-                        <button>Currículo</button>
-                        <button>Entrar em contato</button>
+                        <button className={styles.box_btn}>Currículo</button>
+                        <button className={styles.box_btn}>Entrar em contato</button>
                     </div>
                 </div>
             </div>

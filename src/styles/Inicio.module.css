@@ -25,16 +25,23 @@
     padding: 10px;
     font-size: 1em;
     font-weight: 300;
-    border-radius: 20px;
+    border-radius: 16px;
+    color: white;
     border: none;
-    background-color: greenyellow;
     cursor: pointer;
-
+    background-color: rgba(137, 43, 226, 0.89);
+    box-shadow: 0px 5px 20px -5px  blueviolet;
 }
 
 .box_btns button:hover {
-    border: 1px solid black;
+    transform: translateY(-12px);
+    transition: 1s;
+    box-shadow: 10px 15px 20px -5px  blueviolet;
+    color: blueviolet;
+    background-color: transparent;
+    border: 1px solid rgb(0, 217, 255);
 }
+
 
 /* ABOUT */
 .inicio_about {
