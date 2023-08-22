@@ -52,7 +52,7 @@ export default function Navbar() {
                             </li>
                             <li>
                                 <Link href={'/about'} target={'_self'}>
-                                    Halididades
+                                    Halidades
                                 </Link>
                             </li>
                             <li>
@@ -91,7 +91,7 @@ export default function Navbar() {
                     </li>
                     <li>
                         <Link href={'/about'} target={'_self'}>
-                            Halididades
+                            Halidades
                         </Link>
                     </li>
                     <li>
