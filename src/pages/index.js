@@ -5,6 +5,7 @@ import styles from '<prefix>/styles/Home.module.css'
 
 import Layout from './layout'
 import Inicio from '<prefix>/components/Inicio/Inicio'
+import Habilidades from '<prefix>/components/Halidades/Habilidades'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -20,7 +21,10 @@ export default function Home() {
         <>
         <main className={styles.main}>
           <div className={styles.main_inicio} id='inicio'>
-             < Inicio />
+            < Inicio />
+          </div>
+          <div className={styles.main_habilidades}>
+            < Habilidades />
           </div>
         </main>
       </>

@@ -20,7 +20,7 @@ export default function Inicio() {
                 </div>
             </div>
             <div className={styles.inicio_about}>
-                <span>Sobre mim</span>
+                <span className={styles.span_titulo}>Sobre mim</span>
                 <div className={styles.about_text}>
                     <p>Desenvolvedor front-end, especializado em JavaScript e Node. Utilizo o framework React para desenvolvimento de aplicações web. Sou uma pessoa compromissada, gosto de sair da zona de conforto para tentar novos desafios e gosto de trabalhar em equipe. Tenho habilidades de comunicação e colaboração para ajudar a alcançar objetivos em equipe.</p>
                 </div>

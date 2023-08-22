@@ -1,3 +1,8 @@
+/*  */
+.span_titulo {
+    font-size: 2em;
+  }
+
 /* LAYOUT DO COMPONENTE INICIO */
 .inicio_container {
     background-color: aqua;
