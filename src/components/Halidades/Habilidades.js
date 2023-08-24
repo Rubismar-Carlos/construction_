@@ -7,20 +7,47 @@ import { useState } from 'react'
 import Skill from './Skill'
 
 // REACT ICONS
-import { FaReact } from 'react-icons/fa'
+import { FaReact, FaCss3Alt } from 'react-icons/fa'
+import { DiJavascript1, DiBootstrap, DiMongodb, DiMysql } from 'react-icons/di'
+import { AiFillHtml5 } from 'react-icons/ai'
 
 export default function Habilidades() {
 
     const [skills, setSkills] = useState ([
         {
             id: 0,
-            nome: 'REACT.JS',
-            ico: <FaReact />
+            nome: 'HTML5',
+            ico: < AiFillHtml5 />
         },
         {
             id: 1,
-            nome: 'RUBENS2',
-            ico: "Rubens@"
+            nome: 'CSS3',
+            ico: < FaCss3Alt />
+        },
+        {
+            id: 2,
+            nome: 'JavaScript',
+            ico: < DiJavascript1 />
+        },
+        {
+            id: 3,
+            nome: 'React.JS',
+            ico: < FaReact />
+        },
+        {
+            id: 4,
+            nome: 'BootStrap',
+            ico: < DiBootstrap />
+        },
+        {
+            id: 5,
+            nome: 'MongoDB',
+            ico: < DiMongodb />
+        },
+        {
+            id: 6,
+            nome: 'MySql',
+            ico: < DiMysql />
         }
     ])
 

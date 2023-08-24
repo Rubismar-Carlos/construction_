@@ -1,26 +1,46 @@
 /* COMPONENT SKILL */
 .skill_box {
-    width: 100px;
-    height: 100px;
-    border: 1px solid black;
+    padding: 0px 10px;
+    border-bottom: 2px solid black ;
     text-align: center;
+    cursor: pointer;
 }
 
 .skill_ico {
-    width: 90px;
-    margin: 0 auto;
-    border: 1px solid black;
     height: 60px;
     margin-top: 10px;
 }
 
+/* SVG DAS BOX DE SKILL */
 .skill_ico svg {
-    font-size: 3em;
+    font-size: 4em;
+    width: 80px;
+    transform: translateY(0px);
+    transition: 1s;
+    padding-bottom: 25px;
+    color: blueviolet;
+}
+
+.skill_ico svg:hover {
+    transform: translateY(-20px);
+    transition: 1s;
+    padding-bottom: 40px;
+    box-shadow:  0px 30px 10px -10px blueviolet;
 }
 
 /* HABILIDADES */
+.span_titulo {
+    font-size: 2em;
+}
+
+.container_habilidades {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
 .container_skills {
     display: flex;
     justify-content: center;
     gap: 20px;
+    margin-top: 20px;
 }

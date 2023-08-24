@@ -6,6 +6,7 @@
 /* LAYOUT DO COMPONENTE INICIO */
 .inicio_container {
     background-color: aqua;
+    margin-bottom: 10px;
     padding-top: 80px;
     padding-bottom: 60px;
 }
