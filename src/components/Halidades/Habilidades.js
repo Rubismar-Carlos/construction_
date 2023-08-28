@@ -10,6 +10,7 @@ import Skill from './Skill'
 import { FaReact, FaCss3Alt } from 'react-icons/fa'
 import { DiJavascript1, DiBootstrap, DiMongodb, DiMysql } from 'react-icons/di'
 import { AiFillHtml5 } from 'react-icons/ai'
+import { TbBrandNextjs } from 'react-icons/tb'
 
 export default function Habilidades() {
 
@@ -36,16 +37,21 @@ export default function Habilidades() {
         },
         {
             id: 4,
+            nome: 'Next.JS',
+            ico: < TbBrandNextjs />
+        },
+        {
+            id: 5,
             nome: 'BootStrap',
             ico: < DiBootstrap />
         },
         {
-            id: 5,
+            id: 6,
             nome: 'MongoDB',
             ico: < DiMongodb />
         },
         {
-            id: 6,
+            id: 7,
             nome: 'MySql',
             ico: < DiMysql />
         }
