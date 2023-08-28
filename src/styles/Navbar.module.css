@@ -9,6 +9,7 @@
     background-color: rgba(0, 0, 0, 0.952);
     border-bottom: 2px solid greenyellow;
     font-size: 300;
+    z-index: 10;
 }
 
 .menu a, .ul_mobile a {
