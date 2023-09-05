@@ -4,8 +4,11 @@ import { Inter } from 'next/font/google'
 import styles from '<prefix>/styles/Home.module.css'
 
 import Layout from './layout'
+
+// COMPONENTS
 import Inicio from '<prefix>/components/Inicio/Inicio'
 import Habilidades from '<prefix>/components/Halidades/Habilidades'
+import Projetos from '<prefix>/components/Projetos/Projetos'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -23,8 +26,11 @@ export default function Home() {
           <div className={styles.main_inicio} id='inicio'>
             < Inicio />
           </div>
-          <div className={styles.main_habilidades}>
+          <div className={styles.main_habilidades} id='habilidades'>
             < Habilidades />
+          </div>
+          <div className={styles.main_projetos} id='projeto'>
+              < Projetos />
           </div>
         </main>
       </>

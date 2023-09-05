@@ -36,7 +36,7 @@ export default function Navbar() {
 
 
     return (
-        <div>
+        <div className={styles.container_navbar}>
             <div className={styles.menu}>
                 <div className={styles.logo}>
                     <h2>LOGO</h2>
@@ -46,17 +46,17 @@ export default function Navbar() {
                     <div className={styles.navbar_desktop}>
                         <ul className={styles.ul_desktop}>
                             <li>
-                                <Link href={'/about'} target={'_self'}>
+                                <Link href={'#inicio'} target={'_self'}>
                                     Inicio
                                 </Link>
                             </li>
                             <li>
-                                <Link href={'/about'} target={'_self'}>
+                                <Link href={'#habilidades'} target={'_self'}>
                                     Halidades
                                 </Link>
                             </li>
                             <li>
-                                <Link href={'/about'} target={'_self'}>
+                                <Link href={'#projetos'} target={'_self'}>
                                     Projetos
                                 </Link>
                             </li>
@@ -85,17 +85,17 @@ export default function Navbar() {
             <div className={` ${styles.menu_mobile} ${openMobile ? `${styles.menu_open}` : `${styles.menu_close}`}`}>
                 <ul className={styles.ul_mobile}>
                     <li>
-                        <Link href={'/about'} target={'_self'}>
+                        <Link href={'#inicio'} target={'_self'}>
                             Inicio
                         </Link>
                     </li>
                     <li>
-                        <Link href={'/about'} target={'_self'}>
+                        <Link href={'#habilidades'} target={'_self'}>
                             Halidades
                         </Link>
                     </li>
                     <li>
-                        <Link href={'/about'} target={'_self'}>
+                        <Link href={'#projetos'} target={'_self'}>
                             Projetos
                         </Link>
                     </li>
